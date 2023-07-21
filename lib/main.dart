@@ -8,10 +8,13 @@ void main() {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
+     
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      home:const NotewsView()
+      theme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.dark,fontFamily: "Tajawal"),
+      home: const NotewsView()
     );
   }
 }
